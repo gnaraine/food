@@ -1,0 +1,75 @@
+.containerGrid {
+  max-width: 1600px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.videoContainerGrid {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 16px 32px;
+}
+
+.info {
+  text-align: center;
+  padding-bottom: 32px;
+}
+.title {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+.description {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.scroller {
+ 
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  max-width: 90vw;
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  background: rgb(215, 215, 215);
+  color: black;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 8px 24px;
+  margin: 0px 5px;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  border: solid 1px black;
+  cursor: pointer;
+  padding: 7px 23px;
+}
+
+.btn:focus {
+  color: white;
+  background: black;
+}

@@ -1,0 +1,40 @@
+.container {
+  background: rgb(250, 249, 240);
+}
+.containerGrid {
+  display: grid;
+  grid-template-columns: minmax(0px, 1fr) 50%;
+  gap: 32px;
+  max-width: 1600px;
+  padding: 64px 32px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.gridRight {
+  display: block;
+  max-height: 1200px;
+  overflow-y: scroll;
+  /* background: rgb(163, 240, 201); */
+}
+.gridRight::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.gridLeft {
+  /* background: rgb(105, 89, 250); */
+  max-height: 1200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gridLeft {
+    max-height: 100%;
+  }
+  .gridRight {
+    max-height: 100%;
+  }
+}

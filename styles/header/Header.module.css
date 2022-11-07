@@ -1,0 +1,24 @@
+.header {
+  height: 184px;
+  background: black;
+  color: white;
+}
+
+.banner {
+  height: 112px;
+  background: black;
+  border-bottom: solid 1px rgb(95, 95, 95);
+  text-align: center;
+  font-size: 3.2em;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 72px;
+  gap: 50px;
+  padding-left: 50px;
+}
