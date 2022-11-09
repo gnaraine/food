@@ -1,0 +1,51 @@
+.card {
+  /* display: grid; */
+  padding: 20px;
+}
+
+.cardImageContainer {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.cardImage {
+  aspect-ratio: 1 / 1.33;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  align-self: center;
+  padding: 20px 0px;
+}
+.category {
+  color: white;
+  background: black;
+  width: fit-content;
+  padding: 5px;
+  font-weight: 500;
+}
+* .title {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+}
+.description {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+/* @media screen and (max-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info {
+    padding: 32px 24px 60px 24px;
+  }
+  .cardImageContainer {
+    aspect-ratio: 0;
+  }
+} */

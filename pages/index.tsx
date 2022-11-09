@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { createClient } from "contentful";
+import Header from "../components/header/Header";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -39,9 +40,9 @@ const Home: NextPage = ({}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>Hello</div>
-      {/* <Header />
+      <Header />
 
-      <CardDisplay />
+      {/* <CardDisplay />
       <Scroller />
       <CardArticle />
       <CardTwoGrid />
