@@ -4,10 +4,10 @@ import styles from "../../styles/cardScroller/Scroller.module.css";
 export default function Scroller({ onClick, recipeCard, category }) {
   return (
     <div className={styles.containerGrid}>
-      <div className={styles.info}>
+      {/* <div className={styles.info}>
         <h2 className={styles.title}>WHAT TO COOK TONIGHT</h2>
         <p className={styles.description}>Fast, fresh, and foolproof</p>
-      </div>
+      </div> */}
 
       {/* <div className={styles.selector}>
         <button className={styles.btn} value="All" onClick={onClick}>
