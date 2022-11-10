@@ -1,12 +1,6 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === "production";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-module.exports = {
-  assetPrefix: isProd ? "/gnaraine.github.io/" : "",
-  images: {
-    domains: ["images.ctfassets.net"],
-  },
-  compiler: {
-    styledComponents: true,
-  },
-};
+module.exports = nextConfig
