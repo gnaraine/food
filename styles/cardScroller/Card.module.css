@@ -14,6 +14,7 @@
   padding: 10px;
   max-width: 300px;
   max-height: 32vw;
+  background: rgb(245, 235, 235);
 }
 .tag {
   color: gold;

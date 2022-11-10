@@ -2,14 +2,13 @@ import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Header from "../components/header/Header";
 import CardDisplay from "../components/cardDisplay/CardDisplay";
-// import Scroller from "../components/cardScroller/Scroller";
-// import VideoScroller from "../components/videoScroller/VideoScroller";
-// import CardArticle from "../components/cardArticle/CardArticle";
-
-// import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
-// import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
-// import CardFourGrid from "../components/cardGrid/CardFourGrid";
-// import Footer from "../components/footer/Footer";
+import Scroller from "../components/cardScroller/Scroller";
+import CardArticle from "../components/cardArticle/CardArticle";
+import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
+import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
+import CardFourGrid from "../components/cardGrid/CardFourGrid";
+import VideoScroller from "../components/videoScroller/VideoScroller";
+import Footer from "../components/footer/Footer";
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
@@ -40,8 +39,18 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ cardDisplayLarge, cardDisplaySmall }) {
-  
+export default function Home({
+  onClick,
+  cardDisplayLarge,
+  cardDisplaySmall,
+  recipeCard,
+  articleCard,
+  videoCard,
+}) {
+  const clickHandler = (e) => {
+    // console.log(e)
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -55,7 +64,7 @@ export default function Home({ cardDisplayLarge, cardDisplaySmall }) {
         cardDisplayLarge={cardDisplayLarge}
         cardDisplaySmall={cardDisplaySmall}
       />
-      {/* <Scroller
+      <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
         category={["Pasta", "Vegetarian", "Weeknight"]}
@@ -70,7 +79,7 @@ export default function Home({ cardDisplayLarge, cardDisplaySmall }) {
       <VideoScroller />
       <CardThreeGrid articleCard={articleCard} />
       <CardFourGrid articleCard={articleCard} />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
