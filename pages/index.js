@@ -74,9 +74,9 @@ export default function Home({
         recipeCard={recipeCard}
         category={["Dinner", "Dessert", "Drinks"]}
       /> */}
-      {/* <VideoScroller />
+      <VideoScroller />
       <CardThreeGrid articleCard={articleCard} />
-      <CardFourGrid articleCard={articleCard} /> */}
+      <CardFourGrid articleCard={articleCard} />
       <Footer />
     </div>
   );
