@@ -25,13 +25,13 @@ export default function Scroller({ onClick, recipeCard, category }) {
         ))}
       </div>
 
-      <div id="All" className={styles.scroller}>
+      {/* <div id="All" className={styles.scroller}>
         {recipeCard.map((card) => (
           <Card key={card.sys.id} card={card} />
         ))}
-      </div>
+      </div> */}
 
-      {category.map((cat) => (
+      {/* {category.map((cat) => (
         <div
           key={cat}
           id={cat}
@@ -44,7 +44,7 @@ export default function Scroller({ onClick, recipeCard, category }) {
               <Card key={card.sys.id} card={card} />
             ))}
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }

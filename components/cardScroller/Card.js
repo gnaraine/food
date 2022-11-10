@@ -12,7 +12,7 @@ export default function Card({ card }) {
 
         <div className={styles.info}>
           <p className={styles.title}>{title}</p>
-          {description}
+          <p className={styles.description}>{description}</p>
           <p className={styles.cardRating}>{rating}</p>
         </div>
       </div>
