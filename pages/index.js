@@ -67,7 +67,7 @@ export default function Home({
         category={["Pasta", "Vegetarian", "Weeknight"]}
       />
       <CardArticle />
-      <CardTwoGrid articleCard={articleCard} />
+      {/* <CardTwoGrid articleCard={articleCard} /> */}
       <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
