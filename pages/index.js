@@ -40,12 +40,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({
-  onClick,
   cardDisplayLarge,
   cardDisplaySmall,
-  recipeCard,
-  articleCard,
-  videoCard,
 }) {
   const clickHandler = (e) => {
     // console.log(e)
