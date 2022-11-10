@@ -4,7 +4,7 @@ import Header from "../components/header/Header";
 import CardDisplay from "../components/cardDisplay/CardDisplay";
 import Scroller from "../components/cardScroller/Scroller";
 import CardArticle from "../components/cardArticle/CardArticle";
-// import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
+import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
 // import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
 // import CardFourGrid from "../components/cardGrid/CardFourGrid";
 // import VideoScroller from "../components/videoScroller/VideoScroller";
@@ -68,7 +68,7 @@ export default function Home({
         category={["Pasta", "Vegetarian", "Weeknight"]}
       />
       <CardArticle />
-      {/* <CardTwoGrid articleCard={articleCard} /> */}
+      <CardTwoGrid articleCard={articleCard} />
       {/* <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
