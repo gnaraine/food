@@ -4,10 +4,13 @@ export default function LargeCard({ largeCard }) {
   return (
     <div>
       <div className={styles.largeCard}>
-        <img
-          src={"https:" + image.fields.file.url}
-          className={styles.largeCardImage}
-        ></img>
+        <picture>
+          <img
+            src={"https:" + image.fields.file.url}
+            className={styles.largeCardImage}
+            alt={""}
+          ></img>
+        </picture>
 
         <div className={styles.largeCardInfo}>
           <p className={styles.largeCardTitle}>{title}</p>

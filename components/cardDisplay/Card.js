@@ -5,10 +5,14 @@ export default function Card({ smallCard }) {
   return (
     <div>
       <div className={styles.card}>
-        <img
-          src={"https:" + image.fields.file.url}
-          className={styles.cardImage}
-        ></img>
+        <picture>
+          <img
+            src={"https:" + image.fields.file.url}
+            className={styles.cardImage}
+            alt={""}
+          ></img>
+        </picture>
+
         <div className={styles.info}>
           <p className={styles.title}>{title}</p>
           <p className={styles.description}>{description}</p>

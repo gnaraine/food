@@ -5,7 +5,9 @@ export default function CardArticle() {
     <div>
       <div className={styles.card}>
         <div className={styles.cardImageContainer}>
-          <img className={styles.cardImage}></img>
+          <picture>
+            <img alt={""} className={styles.cardImage}></img>
+          </picture>
         </div>
 
         <div className={styles.info}>

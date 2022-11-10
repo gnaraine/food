@@ -7,7 +7,7 @@ export default function CardThreeGrid({ articleCard }) {
       <div className={styles.gridInfo}>
         <h2 className={styles.title}>WE JUST LOVE THESE</h2>
         <p className={styles.description}>
-          All the stuff you need—and some you don't
+          All the stuff you need—and some you don&apos;t
         </p>
       </div>
 
