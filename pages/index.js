@@ -5,9 +5,9 @@ import CardDisplay from "../components/cardDisplay/CardDisplay";
 import Scroller from "../components/cardScroller/Scroller";
 import CardArticle from "../components/cardArticle/CardArticle";
 import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
-// import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
-// import CardFourGrid from "../components/cardGrid/CardFourGrid";
-// import VideoScroller from "../components/videoScroller/VideoScroller";
+import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
+import CardFourGrid from "../components/cardGrid/CardFourGrid";
+import VideoScroller from "../components/videoScroller/VideoScroller";
 import Footer from "../components/footer/Footer";
 import { createClient } from "contentful";
 
@@ -40,10 +40,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({
+  onClick,
   cardDisplayLarge,
   cardDisplaySmall,
   recipeCard,
   articleCard,
+  videoCard,
 }) {
   const clickHandler = (e) => {
     // console.log(e)
@@ -69,15 +71,15 @@ export default function Home({
       />
       <CardArticle />
       <CardTwoGrid articleCard={articleCard} />
-      {/* <Scroller
+      <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
         category={["Dinner", "Dessert", "Drinks"]}
-      /> */}
-      {/* <VideoScroller />
+      />
+      <VideoScroller />
       <CardThreeGrid articleCard={articleCard} />
-      <CardFourGrid articleCard={articleCard} /> */}
-      {/* <Footer /> */}
+      <CardFourGrid articleCard={articleCard} />
+      <Footer />
     </div>
   );
 }
