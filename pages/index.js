@@ -64,11 +64,11 @@ export default function Home({
         cardDisplayLarge={cardDisplayLarge}
         cardDisplaySmall={cardDisplaySmall}
       />
-      <Scroller
+      {/* <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
         category={["Pasta", "Vegetarian", "Weeknight"]}
-      />
+      /> */}
       {/* <CardArticle />
       <CardTwoGrid articleCard={articleCard} />
       <Scroller
