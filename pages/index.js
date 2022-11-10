@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Header from "../components/header/Header";
 import CardDisplay from "../components/cardDisplay/CardDisplay";
-// import Scroller from "../components/cardScroller/Scroller";
+import Scroller from "../components/cardScroller/Scroller";
 // import CardArticle from "../components/cardArticle/CardArticle";
 // import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
 // import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
@@ -42,6 +42,7 @@ export async function getStaticProps() {
 export default function Home({
   cardDisplayLarge,
   cardDisplaySmall,
+  recipeCard,
 }) {
   const clickHandler = (e) => {
     // console.log(e)
@@ -60,11 +61,11 @@ export default function Home({
         cardDisplayLarge={cardDisplayLarge}
         cardDisplaySmall={cardDisplaySmall}
       />
-      {/* <Scroller
+      <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
         category={["Pasta", "Vegetarian", "Weeknight"]}
-      /> */}
+      />
       {/* <CardArticle />
       <CardTwoGrid articleCard={articleCard} />
       <Scroller
