@@ -8,7 +8,8 @@ export default function Scroller({ onClick, recipeCard, category }) {
         <h2 className={styles.title}>WHAT TO COOK TONIGHT</h2>
         <p className={styles.description}>Fast, fresh, and foolproof</p>
       </div>
-      <div className={styles.selector}>
+
+      {/* <div className={styles.selector}>
         <button className={styles.btn} value="All" onClick={onClick}>
           All
         </button>
@@ -23,7 +24,7 @@ export default function Scroller({ onClick, recipeCard, category }) {
             {cat}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* <div id="All" className={styles.scroller}>
         {recipeCard.map((card) => (
