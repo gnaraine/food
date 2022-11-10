@@ -4,7 +4,7 @@ export default function Card({ smallCard }) {
   const { title, description, image, rating } = smallCard.fields;
   return (
     <div>
-      <div className={styles.card}>
+      <div>
         <img
           src={"https:" + image.fields.file.url}
           className={styles.cardImage}
