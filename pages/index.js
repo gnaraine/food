@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Header from "../components/header/Header";
 import CardDisplay from "../components/cardDisplay/CardDisplay";
-import Scroller from "../components/cardScroller/Scroller";
+// import Scroller from "../components/cardScroller/Scroller";
 // import CardArticle from "../components/cardArticle/CardArticle";
 // import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
 // import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
