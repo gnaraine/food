@@ -69,7 +69,7 @@ export default function Home({
         recipeCard={recipeCard}
         category={["Pasta", "Vegetarian", "Weeknight"]}
       />
-      <CardArticle />
+      {/* <CardArticle />
       <CardTwoGrid articleCard={articleCard} />
       <Scroller
         onClick={(e) => clickHandler(e.target.value)}
@@ -79,7 +79,7 @@ export default function Home({
       <VideoScroller />
       <CardThreeGrid articleCard={articleCard} />
       <CardFourGrid articleCard={articleCard} />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
