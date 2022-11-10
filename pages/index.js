@@ -77,7 +77,7 @@ export default function Home({
       {/* <VideoScroller />
       <CardThreeGrid articleCard={articleCard} />
       <CardFourGrid articleCard={articleCard} /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
