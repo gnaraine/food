@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../components/header/Header";
 import CardDisplay from "../components/cardDisplay/CardDisplay";
 import Scroller from "../components/cardScroller/Scroller";
-// import CardArticle from "../components/cardArticle/CardArticle";
+import CardArticle from "../components/cardArticle/CardArticle";
 // import CardTwoGrid from "../components/cardGrid/CardTwoGrid";
 // import CardThreeGrid from "../components/cardGrid/CardThreeGrid";
 // import CardFourGrid from "../components/cardGrid/CardFourGrid";
@@ -43,6 +43,7 @@ export default function Home({
   cardDisplayLarge,
   cardDisplaySmall,
   recipeCard,
+  articleCard,
 }) {
   const clickHandler = (e) => {
     // console.log(e)
@@ -67,7 +68,7 @@ export default function Home({
         category={["Pasta", "Vegetarian", "Weeknight"]}
       />
       <CardArticle />
-      <CardTwoGrid articleCard={articleCard} />
+      {/* <CardTwoGrid articleCard={articleCard} /> */}
       {/* <Scroller
         onClick={(e) => clickHandler(e.target.value)}
         recipeCard={recipeCard}
