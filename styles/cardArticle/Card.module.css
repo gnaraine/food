@@ -5,7 +5,6 @@
   gap: 32px;
   padding: 40px;
   margin: 0 auto;
-  max-width: 1600px;
 }
 
 .cardImageContainer {
@@ -20,6 +19,12 @@
 
 .info {
   align-self: center;
+  justify-self: center;
+  background: #fee6a3;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  padding-top: 30%;
+  padding-right: 10%;
 }
 
 .title {
@@ -40,7 +45,9 @@
     grid-template-columns: 1fr;
   }
   .info {
-    padding: 32px 24px 60px 24px;
+    padding: 20px;
+    padding-top: 30%;
+    padding-right: 10%;
   }
   .cardImageContainer {
     aspect-ratio: 0;

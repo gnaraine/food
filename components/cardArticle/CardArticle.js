@@ -9,7 +9,7 @@ export default function CardArticle() {
         </div>
 
         <div className={styles.info}>
-          <h3 className={styles.title}>My 10 Best New Restaurants of 2022</h3>
+          <h3 className={styles.title}>10 Best New Restaurants of 2022</h3>
           <p className={styles.description}>
             These new restaurants remind us exactly how thrilling dining out can
             be.

@@ -48,7 +48,16 @@ export default function Home({
   videoCard,
 }) {
   const clickHandler = (e) => {
-    // console.log(e)
+    let selected = document.querySelector("#" + e.target.id);
+    let selectedValue = selected.value;
+    let scroller = selected.parentNode.nextSibling.childNodes;
+
+    scroller.forEach((child) => {
+      child.style.display = "none";
+      if (child.id === selectedValue) {
+        child.style.display = "grid";
+      }
+    });
   };
 
   return (
@@ -65,14 +74,16 @@ export default function Home({
         cardDisplaySmall={cardDisplaySmall}
       />
       <Scroller
-        onClick={(e) => clickHandler(e.target.value)}
+        id={0}
+        onClick={(e) => clickHandler(e)}
         recipeCard={recipeCard}
         category={["Pasta", "Vegetarian", "Weeknight"]}
       />
       <CardArticle />
       <CardTwoGrid articleCard={articleCard} />
       <Scroller
-        onClick={(e) => clickHandler(e.target.value)}
+        id={1}
+        onClick={(e) => clickHandler(e)}
         recipeCard={recipeCard}
         category={["Dinner", "Dessert", "Drinks"]}
       />

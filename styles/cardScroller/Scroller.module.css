@@ -29,7 +29,6 @@
 }
 
 .scroller {
- 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   overflow-x: scroll;

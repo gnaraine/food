@@ -9,7 +9,7 @@
 }
 
 .cardImage {
-  aspect-ratio: 1 / 1.33;
+  /* aspect-ratio: 1 / 1; */
   max-width: 100%;
   object-fit: contain;
 }
