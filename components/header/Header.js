@@ -5,6 +5,9 @@ export default function Header() {
       <div className={styles.header}>
         <div className={styles.banner}>my appétite</div>
         <div className={styles.nav}>
+          <p>
+            <a href="https://gnaraine.github.io/">Back to Projects</a>
+          </p>
           <p>One</p>
           <p>Two</p>
           <p>Three</p>
